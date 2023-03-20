@@ -15,13 +15,28 @@ The application will also function offline.
 
  ## Installation
 
+To run this application you will need: 
+````
+npm install
+````
+````
+on client - npm run build
+````
+````
+on server - npm start 
+````
+
 ## License
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Usage
+ [Heroku](https://heroku.com)
+
+[Screenshot](https://.com)
 
 ## Tests
+No current testing 
 
 ## Questions
  Please email me, if you have any questions
