@@ -34,17 +34,17 @@ registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   new StaleWhileRevalidate({
     // name of the cache storage
-    cacheName: 'asset-cache', 
+    cacheName: 'asset-cache',
     plugins: [
       // this plugin will cache responses with these headers to a maximum-age of 30 days
-    new CacheableResponsePlugin({
-      statuses: [0,200],
-    }),
-  new ExpirationPlugin({
-    maxEntries: 60, 
-    // 30 days 
-    maxAgeSeconds: 30 * 24 * 60 * 60, 
-  })
-],
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        // 30 days 
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      })
+    ],
   })
 );

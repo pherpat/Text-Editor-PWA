@@ -26,7 +26,7 @@ butInstall.addEventListener('click', async () => {
 });
 
 window.addEventListener('appinstalled', (event) => {
-    //clear promt 
+    //clear prompt 
     console.log('install hit')
     window.deferredPrompt = null;
 });

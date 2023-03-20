@@ -9,6 +9,11 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = () => {
   return {
     mode: 'development',
+    watch: true,
+    watchOptions: {
+      ignored: /node_modules/,
+      poll: 1000 // Check for changes every second
+    },
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
@@ -28,7 +33,7 @@ module.exports = () => {
       }),
       // injects custom sw
       new InjectManifest({
-        swSrc: '/.src-sw.js',
+        swSrc: './src-sw.js',
         swDest: 'src-sw.js'
       }),
       // creates a manifest.json file 
