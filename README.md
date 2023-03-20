@@ -33,7 +33,7 @@ on server - npm start
 ## Usage
  [Heroku](https://heroku.com)
 
-[Screenshot](https://.com)
+[Screenshot](https://github.com/pherpat/Text-Editor-PWA/blob/main/assets/Text-editor-screenshot.png)
 
 ## Tests
 No current testing 
