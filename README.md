@@ -31,7 +31,7 @@ on server - npm start
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Usage
- [Heroku](https://heroku.com)
+ [Heroku](https://texteditor-jp.herokuapp.com/)
 
 [Screenshot](https://github.com/pherpat/Text-Editor-PWA/blob/main/assets/Text-editor-screenshot.png)
 
